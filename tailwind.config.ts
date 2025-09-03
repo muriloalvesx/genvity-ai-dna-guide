@@ -52,6 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Genetic/Health AI Colors
+				genetic: {
+					blue: 'hsl(var(--genetic-blue))',
+					green: 'hsl(var(--genetic-green))',
+					purple: 'hsl(var(--genetic-purple))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -62,6 +68,21 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-genetic': 'var(--gradient-genetic)',
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-button': 'var(--gradient-button)',
+				'gradient-accent': 'var(--gradient-accent)'
+			},
+			boxShadow: {
+				'genetic': 'var(--shadow-genetic)',
+				'glow': 'var(--shadow-glow)',
+				'card-hover': 'var(--shadow-card)'
+			},
+			fontFamily: {
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

@@ -2,41 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Genvity AI Design System - Sophisticated tech aesthetic with genetic/health focus
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Background System */
+    --background: 215 100% 2%;
+    --foreground: 180 20% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card System */
+    --card: 215 25% 8%;
+    --card-foreground: 180 15% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Interactive Elements */
+    --popover: 215 30% 6%;
+    --popover-foreground: 180 15% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Brand Primary - Deep Tech Blue */
+    --primary: 215 100% 12%;
+    --primary-foreground: 180 20% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Graphite */
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 180 15% 90%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted Elements */
+    --muted: 220 20% 10%;
+    --muted-foreground: 180 10% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Neon Highlights */
+    --accent: 180 100% 50%;
+    --accent-foreground: 215 100% 5%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Genetic Colors */
+    --genetic-blue: 195 100% 65%;
+    --genetic-green: 150 100% 45%;
+    --genetic-purple: 270 100% 65%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Status */
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 180 20% 98%;
 
-    --radius: 0.5rem;
+    /* Borders & Inputs */
+    --border: 220 20% 20%;
+    --input: 220 20% 15%;
+    --ring: 180 100% 50%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(215 100% 2%), hsl(220 100% 8%), hsl(195 100% 12%));
+    --gradient-genetic: linear-gradient(90deg, hsl(var(--genetic-blue) / 0.3), hsl(var(--genetic-green) / 0.3), hsl(var(--genetic-purple) / 0.3));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(220 30% 6%));
+    --gradient-button: linear-gradient(135deg, hsl(var(--genetic-blue)), hsl(var(--genetic-green)));
+    --gradient-accent: linear-gradient(90deg, hsl(var(--accent)), hsl(var(--genetic-green)));
+
+    /* Shadows */
+    --shadow-genetic: 0 0 40px hsl(var(--genetic-blue) / 0.3);
+    --shadow-glow: 0 10px 40px hsl(var(--accent) / 0.2);
+    --shadow-card: 0 8px 32px hsl(215 100% 2% / 0.6);
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +130,152 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    background: var(--gradient-hero);
+    min-height: 100vh;
+  }
+
+  /* DNA Helix Animation */
+  @keyframes dna-float {
+    0%, 100% { 
+      transform: translateY(0px) rotate(0deg);
+      opacity: 0.6;
+    }
+    50% { 
+      transform: translateY(-20px) rotate(180deg);
+      opacity: 0.9;
+    }
+  }
+
+  @keyframes genetic-pulse {
+    0%, 100% { 
+      box-shadow: 0 0 20px hsl(var(--genetic-blue) / 0.4);
+      transform: scale(1);
+    }
+    50% { 
+      box-shadow: 0 0 40px hsl(var(--genetic-green) / 0.6);
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes hero-glow {
+    0%, 100% { 
+      background-position: 0% 50%;
+    }
+    50% { 
+      background-position: 100% 50%;
+    }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+}
+
+@layer components {
+  /* DNA Background Elements */
+  .dna-background {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .dna-strand {
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background: var(--gradient-genetic);
+    animation: dna-float 6s ease-in-out infinite;
+    border-radius: 2px;
+  }
+
+  /* Hero Section */
+  .hero-container {
+    background: var(--gradient-hero);
+    background-size: 400% 400%;
+    animation: hero-glow 8s ease-in-out infinite;
+    position: relative;
+  }
+
+  /* Button Variants */
+  .btn-genetic {
+    background: var(--gradient-button);
+    border: none;
+    color: hsl(var(--primary-foreground));
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-genetic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+  }
+
+  .btn-genetic:hover::before {
+    left: 100%;
+  }
+
+  .btn-genetic:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Card Variants */
+  .card-genetic {
+    background: var(--gradient-card);
+    border: 1px solid hsl(var(--border));
+    backdrop-filter: blur(20px);
+    transition: var(--transition-smooth);
+  }
+
+  .card-genetic:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-card);
+    border-color: hsl(var(--genetic-blue) / 0.5);
+  }
+
+  /* Interactive Glow */
+  .glow-on-hover {
+    transition: var(--transition-smooth);
+  }
+
+  .glow-on-hover:hover {
+    animation: genetic-pulse 2s ease-in-out infinite;
+  }
+
+  /* Fade in animation */
+  .fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+  }
+
+  /* Shimmer effect */
+  .shimmer {
+    background: linear-gradient(90deg, transparent, hsl(var(--accent) / 0.1), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
   }
 }
