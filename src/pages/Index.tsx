@@ -6,6 +6,7 @@ import DashboardSection from '@/components/genvity/DashboardSection';
 import TestimonialsSection from '@/components/genvity/TestimonialsSection';
 import VideoSection from '@/components/genvity/VideoSection';
 import PartnersSection from '@/components/genvity/PartnersSection';
+import FinalCTASection from '@/components/genvity/FinalCTASection';
 import LeadCaptureSection from '@/components/genvity/LeadCaptureSection';
 import Footer from '@/components/genvity/Footer';
 
@@ -32,6 +33,9 @@ const Index = () => {
       
       {/* Partners & Supporters */}
       <PartnersSection />
+      
+      {/* Final CTA */}
+      <FinalCTASection />
       
       {/* Lead Capture */}
       <LeadCaptureSection />

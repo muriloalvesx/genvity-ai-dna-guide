@@ -4,36 +4,36 @@ import { Star, Quote } from 'lucide-react';
 const TestimonialsSection: React.FC = () => {
   const testimonials = [
     {
-      name: 'Dr. Marina Santos',
-      role: 'Médica Preventiva',
-      avatar: '👩‍⚕️',
+      name: 'Carla',
+      role: '42 anos',
+      avatar: '👩‍💼',
       rating: 5,
-      text: 'A GEN revolucionou como acompanho meus pacientes. Os insights genéticos personalizados são incomparáveis.',
-      highlight: 'Revolucionou'
+      text: 'Eu já tinha tentado de tudo. A GEN foi a primeira que realmente ficou comigo no dia a dia. Hoje tenho mais energia e foco.',
+      highlight: 'Mais energia'
     },
     {
-      name: 'Carlos Mendoza',
-      role: 'Executivo, 45 anos',
+      name: 'Roberto',
+      role: '51 anos',
       avatar: '👨‍💼',
       rating: 5,
-      text: 'Em 6 meses, minha idade biológica diminuiu 4 anos. O protocolo personalizado da GEN é surreal.',
-      highlight: '4 anos mais jovem'
+      text: 'Meu plano Better Life me deu clareza sobre minha saúde e um guia ativo diário. Nunca estive tão disciplinado.',
+      highlight: 'Mais disciplina'
     },
     {
-      name: 'Ana Patricia',
-      role: 'Biohacker',
-      avatar: '🧬',
+      name: 'Fernanda',
+      role: '38 anos',
+      avatar: '👩‍⚕️',
       rating: 5,
-      text: 'Testei dezenas de plataformas. A GEN é a única que realmente entende minha genética e corpo.',
-      highlight: 'Realmente entende'
+      text: 'Com o plano Immortal descobri meu perfil genético e transformei em rotina prática. É saúde em tempo real.',
+      highlight: 'Saúde real'
     },
     {
-      name: 'Prof. João Ribeiro',
-      role: 'Pesquisador em Longevidade',
-      avatar: '👨‍🔬',
+      name: 'Dr. Silva',
+      role: 'Médico Preventivo',
+      avatar: '👨‍⚕️',
       rating: 5,
-      text: 'A base científica por trás da GEN é sólida. É o futuro da medicina personalizada.',
-      highlight: 'Futuro da medicina'
+      text: 'A GEN revolucionou como acompanho meus pacientes. Os insights personalizados são incomparáveis.',
+      highlight: 'Revolucionou'
     }
   ];
 

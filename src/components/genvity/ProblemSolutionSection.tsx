@@ -16,7 +16,7 @@ const ProblemSolutionSection: React.FC = () => {
               <h3 className="text-2xl font-bold text-foreground mb-4">O Problema</h3>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Falta de personalização real em saúde e longevidade. Soluções genéricas que não consideram sua genética única, histórico médico e estilo de vida específico.
+              Protocolos genéricos não funcionam. Médicos, academias e apps oferecem soluções iguais para todos, ignorando sua genética, hormônios e rotina únicos.
             </p>
           </div>
 
@@ -29,7 +29,7 @@ const ProblemSolutionSection: React.FC = () => {
               <h3 className="text-2xl font-bold text-foreground mb-4">A Solução</h3>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Uma IA que lê seus dados mais profundos (genética, sangue, corpo, mente) e devolve recomendações diárias e práticas, personalizadas para você.
+              A primeira IA ativa de longevidade que guia você todos os dias. Personalização profunda através de genética, exames e rotina, com protocolos 360° e acompanhamento ativo.
             </p>
           </div>
 
@@ -42,7 +42,7 @@ const ProblemSolutionSection: React.FC = () => {
               <h3 className="text-2xl font-bold text-foreground mb-4">A Transformação</h3>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Saúde e longevidade, guiado em cada passo do seu dia pela GEN. Protocolo personalizado que evolui com você.
+              Com a Genvity AI, saúde deixa de ser tentativa e erro. É ciência + tecnologia transformada em ação prática diária.
             </p>
           </div>
 

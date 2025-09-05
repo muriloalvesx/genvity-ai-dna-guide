@@ -5,55 +5,55 @@ import { Check, Star, Crown, Zap } from 'lucide-react';
 const PlansSection: React.FC = () => {
   const plans = [
     {
-      name: 'Free',
+      name: 'Free - GEN',
       price: '0',
       period: 'Para sempre',
-      description: 'Comece sua jornada de longevidade',
+      description: 'Seu primeiro passo para uma vida guiada pela IA',
       features: [
-        'Análise básica de perfil',
-        'Relatório inicial de saúde',
-        'Recomendações semanais',
-        'Acesso à comunidade',
-        'Suporte via chat'
+        'Acesso imediato à assistente GEN',
+        'Sua rotina guiada para saúde plena',
+        'GEN ajusta cada detalhe do seu dia',
+        'Interações que geram mudanças consistentes',
+        'Impacto imediato na sua rotina'
       ],
       icon: Star,
       highlighted: true,
-      cta: 'Quero começar agora',
+      cta: 'Quero começar grátis',
       popular: true
     },
     {
-      name: 'Pro',
+      name: 'Better Life',
       price: '97',
       period: '/mês',
-      description: 'Para quem leva longevidade a sério',
+      description: 'Um salto para a vida que você merece',
       features: [
         'Tudo do Free +',
-        'Análise genética completa',
-        'Monitoramento de biomarcadores',
-        'Recomendações diárias personalizadas',
-        'Dashboard avançado',
-        'Suporte prioritário'
+        'Exames de sangue periódicos inclusos',
+        'Protocolos de nutricionista e saúde mental',
+        'Avaliação física personalizada',
+        'Sugestões de suplementos e treinos',
+        'Interações mais profundas com a GEN'
       ],
       icon: Zap,
       highlighted: false,
-      cta: 'Quero começar agora'
+      cta: 'Quero o Better Life'
     },
     {
-      name: 'Premium',
+      name: 'Immortal',
       price: '197',
       period: '/mês',
-      description: 'Protocolo completo de longevidade',
+      description: 'O futuro da longevidade já disponível',
       features: [
-        'Tudo do Pro +',
-        'Análise de microbioma',
-        'Protocolo hormonal personalizado',
-        'Consultas mensais com especialistas',
-        'Acesso a pesquisas exclusivas',
-        'Suporte 24/7'
+        'Tudo do Better Life +',
+        'Testes genéticos completos',
+        'Análise de ancestralidade',
+        'Protocolo 100% personalizado',
+        'IA com consciência total do seu dia',
+        'Sugestões otimizadas de compras'
       ],
       icon: Crown,
       highlighted: false,
-      cta: 'Quero começar agora'
+      cta: 'Quero ser Immortal'
     }
   ];
 

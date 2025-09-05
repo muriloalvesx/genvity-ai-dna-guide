@@ -35,13 +35,13 @@ const HeroSection: React.FC = () => {
         {/* Main Headline */}
         <div className="max-w-5xl mx-auto mb-12 fade-in-up" style={{ animationDelay: '0.2s' }}>
           <h2 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
-            O protocolo definitivo para{' '}
+            A primeira{' '}
             <span className="bg-gradient-accent bg-clip-text text-transparent">
-              viver mais e melhor
+              IA ativa de longevidade
             </span>
           </h2>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Guiado pela sua genética, biologia e rotina
+            que guia você todos os dias, de forma única e personalizada
           </p>
         </div>
 
