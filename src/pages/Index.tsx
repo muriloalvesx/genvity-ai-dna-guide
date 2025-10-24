@@ -19,11 +19,11 @@ const Index = () => {
       {/* Problem → Solution → Transformation */}
       <ProblemSolutionSection />
       
-      {/* Plans Section */}
-      <PlansSection />
-      
       {/* Dashboard/Results Section */}
       <DashboardSection />
+
+      {/* Plans Section */}
+      <PlansSection />
       
       {/* Testimonials */}
       <TestimonialsSection />

@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Dna, Activity, Brain } from 'lucide-react';
 import DNABackground from './DNABackground';
 import heroImage from '@/assets/genvity-hero-bg.jpg';
+import genvityLogo from '@/assets/logo.jpeg';
 
 const HeroSection: React.FC = () => {
   return (
@@ -22,10 +23,20 @@ const HeroSection: React.FC = () => {
         {/* Logo/Brand */}
         <div className="flex items-center justify-center mb-8 fade-in-up">
           <div className="flex items-center space-x-3">
+            {/* --- 2. ÁREA MODIFICADA --- */}
+            {/* Eu aumentei um pouco o tamanho de w-12 para w-16 (64px) 
+                para a logo ter mais destaque. */}
             <div className="relative">
-              <Dna className="w-12 h-12 text-genetic-blue animate-pulse" />
-              <div className="absolute inset-0 w-12 h-12 bg-genetic-blue/20 rounded-full animate-ping" />
+              {/* SUBSTITUÍMOS O <Dna .../> PELA SUA IMAGEM */}
+              <img 
+                src={genvityLogo} 
+                alt="Genvity AI Logo" 
+                className="w-16 h-16 rounded-full animate-pulse" 
+              />
+              {/* A animação "ping" continua, mas agora com o tamanho w-16 */}
+              <div className="absolute inset-0 w-16 h-16 bg-genetic-blue/20 rounded-full animate-ping" />
             </div>
+            {/* --- FIM DA ÁREA MODIFICADA --- */}
             <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-genetic-blue via-genetic-green to-genetic-purple bg-clip-text text-transparent">
               GenVity AI
             </h1>
